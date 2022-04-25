@@ -17,11 +17,11 @@
 </head>
 
 <body>
-    <nav class="nav nav-pills flex-column flex-sm-row">
-        <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="#">Active</a>
-        <a class="flex-sm-fill text-sm-center nav-link" href="#">Longer nav link</a>
-        <a class="flex-sm-fill text-sm-center nav-link" href="#">Link</a>
-        <a class="flex-sm-fill text-sm-center nav-link">Disabled</a>
+    <nav class="nav nav-pills flex-column flex-sm-row navbar navbar-dark bg-secondary">
+        <a class="flex-sm-fill text-sm-center nav-link active navbar-brand" aria-current="page" href="#">Active</a>
+        <a class="flex-sm-fill text-sm-center nav-link active navbar-brand" href="#">Longer nav link</a>
+        <a class="flex-sm-fill text-sm-center nav-link active navbar-brand" href="#">Link</a>
+        <a class="flex-sm-fill text-sm-center nav-link active navbar-brand">Disabled</a>
     </nav>
 
     <!-- Optional JavaScript; choose one of the two! -->
