@@ -18,14 +18,14 @@
 
 <body>
     <nav class="nav nav-pills flex-column flex-sm-row navbar navbar-dark bg-secondary">
-        <a class="flex-sm-fill text-sm-center nav-link active navbar-brand" aria-current="page" href="#">Home</a>
+        <a class="flex-sm-fill text-sm-center nav-link active navbar-brand" aria-current="page" href="index.php">Home</a>
         <a class="flex-sm-fill text-sm-center nav-link active navbar-brand" href="#">Questions</a>
         <a class="flex-sm-fill text-sm-center nav-link active navbar-brand" href="#">Answers</a>
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle flex-sm-fill text-sm-center nav-link active navbar-brand" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Sign In/Register</a>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Sign In</a></li>
-                <li><a class="dropdown-item" href="#">Register</a></li>
+                <li><a class="dropdown-item" href="register.php">Register</a></li>
             </ul>
         </li>
     </nav>
