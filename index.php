@@ -18,11 +18,33 @@
 
 <body>
     <nav class="nav nav-pills flex-column flex-sm-row navbar navbar-dark bg-secondary">
-        <a class="flex-sm-fill text-sm-center nav-link active navbar-brand" aria-current="page" href="#">Active</a>
-        <a class="flex-sm-fill text-sm-center nav-link active navbar-brand" href="#">Longer nav link</a>
-        <a class="flex-sm-fill text-sm-center nav-link active navbar-brand" href="#">Link</a>
-        <a class="flex-sm-fill text-sm-center nav-link active navbar-brand">Disabled</a>
+        <a class="flex-sm-fill text-sm-center nav-link active navbar-brand" aria-current="page" href="#">Home</a>
+        <a class="flex-sm-fill text-sm-center nav-link active navbar-brand" href="#">Questions</a>
+        <a class="flex-sm-fill text-sm-center nav-link active navbar-brand" href="#">Answers</a>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle flex-sm-fill text-sm-center nav-link active navbar-brand" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Sign In/Register</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Sign In</a></li>
+                <li><a class="dropdown-item" href="#">Register</a></li>
+            </ul>
+        </li>
     </nav>
+    <br>
+    <center>
+        <span class="border border-dark" style="display: inline-block;">
+            <img src="learn-html-and-css-copy.png" width="720" height="321" alt="Learn HTML and CSS Picture">
+        </span>
+    </center>
+    <h2>
+        <center>
+            Welcome to HTMLhelp
+        </center>
+    </h2>
+    <h5>
+        <center>Looking to refresh your knowledge on HTML/CSS? Here you can
+            advance through several questions to test your knowledge on
+            the subjects. We'll let you know the correct answers and why!</center>
+    </h5>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
