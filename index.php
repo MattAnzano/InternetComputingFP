@@ -1,7 +1,3 @@
-<?php
-
-?>
-
 <!doctype html>
 <html lang="en">
 
@@ -17,14 +13,15 @@
 </head>
 
 <body>
-    <nav class="nav nav-pills flex-column flex-sm-row navbar navbar-dark bg-secondary">
-        <a class="flex-sm-fill text-sm-center nav-link active navbar-brand" aria-current="page" href="index.php">Home</a>
-        <a class="flex-sm-fill text-sm-center nav-link active navbar-brand" href="#">Questions</a>
-        <a class="flex-sm-fill text-sm-center nav-link active navbar-brand" href="#">Answers</a>
+    <nav class="nav nav-pills justify-content navbar navbar-dark bg-secondary">
+        <a class="text-sm-center nav-link active navbar-brand" aria-current="page" href="index.php">Welcome to HTMLhelp</a>
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle flex-sm-fill text-sm-center nav-link active navbar-brand" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Sign In/Register</a>
+            <a class="nav-link dropdown-toggle text-sm-left nav-link active navbar-brand" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Sign In/Register</a>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Sign In</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
                 <li><a class="dropdown-item" href="register.php">Register</a></li>
             </ul>
         </li>
@@ -35,11 +32,11 @@
             <img src="learn-html-and-css-copy.png" width="720" height="321" alt="Learn HTML and CSS Picture">
         </span>
     </center>
-    <h2>
+    <h1>
         <center>
-            Welcome to HTMLhelp
+            <b>Welcome to HTMLhelp</b>
         </center>
-    </h2>
+    </h1>
     <h5>
         <center>Looking to refresh your knowledge on HTML/CSS? Here you can
             advance through several questions to test your knowledge on

@@ -13,30 +13,62 @@
 </head>
 
 <body>
+    <nav class="nav nav-pills justify-content navbar navbar-dark bg-secondary">
+        <a class="text-sm-center nav-link active navbar-brand" aria-current="page" href="index.php">Welcome to HTMLhelp</a>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-sm-left nav-link active navbar-brand" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Sign In/Register</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Sign In</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="register.php">Register</a></li>
+            </ul>
+        </li>
+    </nav>
+    <h2>
+        <center>Please enter your information to register an account</center>
+    </h2>
+
     <form method="post">
-        <div class="form-group row">
-            <label class="col-sm-2 col-form-label" for="exampleInputUserName1">Username</label>
+        <div class="form-group row" style="padding-top: 1em">
+            <label class="col-sm-2 col-form-label" style="padding-left: 5em" for="exampleInputUserName1">Username:</label>
             <div class="col-sm-10">
                 <input type="text" class="form-control" id="exampleInputUserName1" placeholder="Username" required>
             </div>
         </div>
-        <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+
+        <div class="form-group row" style="padding-top: 1em">
+            <label class="col-sm-2 col-form-label" style="padding-left: 5em" for="exampleInputPassword1">Password:</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="exampleInputFirstName1">First Name</label>
-            <input type="text" class="form-control" id="exampleInputLastName1" placeholder="First Name" required>
+
+        <div class="form-group row" style="padding-top: 1em">
+            <label class="col-sm-2 col-form-label" style="padding-left: 5em" for="exampleInputFirstName1">First Name:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="exampleInputLastName1" placeholder="First Name" required>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="exampleInputLastName1">Last Name</label>
-            <input type="text" class="form-control" id="exampleInputLastName1" placeholder="Last Name" required>
+
+        <div class="form-group row" style="padding-top: 1em">
+            <label class="col-sm-2 col-form-label" style="padding-left: 5em" for="exampleInputLastName1">Last Name:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="exampleInputLastName1" placeholder="Last Name" required>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+
+        <div class="form-group row" style="padding-top: 1em">
+            <label class="col-sm-2 col-form-label" style="padding-left: 5em" for="exampleInputEmail1">Email:</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+            </div>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <br>
+        <div style="padding-left: 13.5em;">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
     </form>
 </body>
 
