@@ -26,9 +26,9 @@
             </ul>
         </li>
     </nav>
-    <h2>
+    <h1>
         <center>Please enter your information to register an account</center>
-    </h2>
+    </h1>
 
     <form method="post">
         <div class="form-group row" style="padding-top: 1em">
@@ -65,6 +65,35 @@
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
             </div>
         </div>
+
+        <div class="form-group row" style="padding-top: 1em">
+            <label class="col-sm-2 col-form-label" style="padding-left: 5em" for="exampleInputAddress1">Address:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="exampleInputAddress1" placeholder="Address" required>
+            </div>
+        </div>
+
+        <div class="form-group row" style="padding-top: 1em">
+            <label class="col-sm-2 col-form-label" style="padding-left: 5em" for="exampleInputCity1">City:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="exampleInputCity1" placeholder="City" required>
+            </div>
+        </div>
+
+        <div class="form-group row" style="padding-top: 1em">
+            <label class="col-sm-2 col-form-label" style="padding-left: 5em" for="exampleInputState1">State:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="exampleInputState1" placeholder="State" required>
+            </div>
+        </div>
+
+        <div class="form-group row" style="padding-top: 1em">
+            <label class="col-sm-2 col-form-label" style="padding-left: 5em" for="exampleInputZipCode1">Zip Code:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="exampleInputZipCOde1" placeholder="Zip Code" required>
+            </div>
+        </div>
+
         <br>
         <div style="padding-left: 13.5em;">
             <button type="submit" class="btn btn-primary">Submit</button>
