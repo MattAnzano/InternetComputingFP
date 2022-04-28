@@ -1,15 +1,3 @@
-<?php
-$Username = $_POST['exampleInputUserName1'];
-$Password = $_POST['exampleInputPassword1'];
-$First_Name = $_POST['exampleInputFirstName1'];
-$Last_Name = $_POST['exampleInputLastName1'];
-$Email = $_POST['exampleInputEmail1'];
-$Address = $_POST['exampleInputAddress1'];
-$City = $_POST['exampleInputCity1'];
-$State = $_POST['exampleInputState1'];
-$Zip_Code = $_POST['exampleInputZipCode1'];
-?>
-
 <!doctype html>
 <html lang="en">
 
