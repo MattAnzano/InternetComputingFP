@@ -30,11 +30,15 @@ $Zip_Code = $_POST['exampleInputZipCode1'];
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle text-sm-left nav-link active navbar-brand" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Sign In/Register</a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Sign In</a></li>
+                <li><a class="dropdown-item" href="signin.php">Sign In</a></li>
                 <li>
                     <hr class="dropdown-divider">
                 </li>
                 <li><a class="dropdown-item" href="register.php">Register</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="admin/adminlogin.php">Admin</a></li>
             </ul>
         </li>
     </nav><br>

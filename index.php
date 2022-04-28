@@ -23,12 +23,16 @@
                     <hr class="dropdown-divider">
                 </li>
                 <li><a class="dropdown-item" href="register.php">Register</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="admin/adminlogin.php">Admin</a></li>
             </ul>
         </li>
     </nav>
     <br>
     <center>
-        <span class="border border-dark" style="display: inline-block;">
+        <span class="border border-dark rounded" style="display: inline-block;">
             <img src="learn-html-and-css-copy.png" width="720" height="321" alt="Learn HTML and CSS Picture">
         </span>
     </center>
@@ -38,7 +42,7 @@
         </center>
     </h1>
     <h5>
-        <center>Looking to refresh your knowledge on HTML/CSS? Here you can
+        <center class="text-muted">Looking to refresh your knowledge on HTML/CSS? Here you can
             advance through several questions to test your knowledge on
             the subjects. We'll let you know the correct answers and why!</center>
     </h5>
