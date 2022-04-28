@@ -28,6 +28,7 @@ $Zip_Code = $_POST['exampleInputZipCode1'];
     <nav class="nav nav-pills justify-content navbar navbar-dark bg-secondary">
         <a class="text-sm-center nav-link active navbar-brand" aria-current="page" href="index.php">Welcome to HTMLhelp</a>
         <a class="text-sm-center nav-link active navbar-brand" aria-current="page" href="questions.php">Questions</a>
+        <a class="nav-link text-sm-left nav-link active navbar-brand" href="logout.php" role="button" aria-expanded="page">Logout</a>
         <a class="nav-link disabled text-sm-left navbar-brand" href="#" role="button" aria-expanded="false"><?php echo "Welcome back " . $Username; ?></a>
     </nav><br>
     <center>
