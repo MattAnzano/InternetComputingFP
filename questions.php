@@ -21,7 +21,7 @@
     </nav><br>
     <center>
         <span class="border border-dark" style="display: inline-block;">
-            <img src="learn-html-and-css-copy.png" width="360" height="150" alt="Learn HTML and CSS Picture">
+            <a href="questions.php"><img src="learn-html-and-css-copy.png" width="360" height="150" alt="Learn HTML and CSS Picture"></a>
         </span>
     </center>
     <h1>

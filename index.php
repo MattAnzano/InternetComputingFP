@@ -41,10 +41,13 @@
             <b>Welcome to HTMLhelp</b>
         </center>
     </h1>
-    <h5>
+    <h4>
         <center class="text-muted">Looking to refresh your knowledge on HTML/CSS? Here you can
             advance through several questions to test your knowledge on
             the subjects. We'll let you know the correct answers and why!</center>
+    </h4>
+    <h5>
+        <center class="text-muted">Sign in or Register in the top right of the page!</center>
     </h5>
 
     <!-- Optional JavaScript; choose one of the two! -->

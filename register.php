@@ -39,7 +39,7 @@
         <center>Please enter your information to register an account</center>
     </h1>
 
-    <form action="loginhomepage.php" method="post">
+    <form action="registerhomepage.php" method="post">
         <div class="form-group row" style="padding-top: 1em">
             <label class="col-sm-2 col-form-label" style="padding-left: 5em" for="exampleInputUserName1">Username:</label>
             <div class="col-sm-10">
@@ -104,7 +104,7 @@
         </div>
 
         <br>
-        <div style="padding-left: 13.5em;">
+        <div style="padding-left: 4.3em;">
             <button type="submit" class="btn btn-primary">Submit</button>
         </div>
     </form>

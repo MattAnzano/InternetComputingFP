@@ -36,7 +36,7 @@ $Password = $_POST['exampleInputPassword1'];
         </span>
     </center>
     <h1>
-        <center>Thank you for logging in <?php echo $Username; ?></center>
+        <center>Thank you for registering <?php echo $Username; ?></center>
     </h1>
     <h3>
         <center>Click the questions button below to access the list of questions.</center>
