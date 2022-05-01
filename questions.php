@@ -1,15 +1,3 @@
-<?php
-$Username = $_POST['exampleInputUserName1'];
-$Password = $_POST['exampleInputPassword1'];
-$First_Name = $_POST['exampleInputFirstName1'];
-$Last_Name = $_POST['exampleInputLastName1'];
-$Email = $_POST['exampleInputEmail1'];
-$Address = $_POST['exampleInputAddress1'];
-$City = $_POST['exampleInputCity1'];
-$State = $_POST['exampleInputState1'];
-$Zip_Code = $_POST['exampleInputZipCode1'];
-?>
-
 <!doctype html>
 <html lang="en">
 
@@ -30,7 +18,6 @@ $Zip_Code = $_POST['exampleInputZipCode1'];
         <a class="text-sm-center nav-link active navbar-brand" aria-current="page" href="index.php">Welcome to HTMLhelp</a>
         <a class="text-sm-center nav-link active navbar-brand" aria-current="page" href="questions.php">Questions</a>
         <a class="nav-link text-sm-left nav-link active navbar-brand" href="logout.php" role="button" aria-expanded="page">Logout</a>
-        <a class="nav-link disabled text-sm-left navbar-brand" href="#" role="button" aria-expanded="false"><?php echo "Welcome back " . $Username; ?></a>
     </nav><br>
     <center>
         <span class="border border-dark" style="display: inline-block;">
@@ -43,6 +30,10 @@ $Zip_Code = $_POST['exampleInputZipCode1'];
     <h4>
         <center>Don't worry, we will give you an option to see the answer and explain why that is the correct answer</center>
     </h4>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 
 </body>
 

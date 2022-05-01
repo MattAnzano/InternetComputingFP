@@ -1,13 +1,6 @@
 <?php
 $Username = $_POST['exampleInputUserName1'];
 $Password = $_POST['exampleInputPassword1'];
-$First_Name = $_POST['exampleInputFirstName1'];
-$Last_Name = $_POST['exampleInputLastName1'];
-$Email = $_POST['exampleInputEmail1'];
-$Address = $_POST['exampleInputAddress1'];
-$City = $_POST['exampleInputCity1'];
-$State = $_POST['exampleInputState1'];
-$Zip_Code = $_POST['exampleInputZipCode1'];
 ?>
 
 <!doctype html>
@@ -22,15 +15,21 @@ $Zip_Code = $_POST['exampleInputZipCode1'];
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <title>Home</title>
+    <style>
+        .btn-xl {
+            padding: 10px 20px;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 
 
 <body>
     <nav class="nav nav-pills justify-content navbar navbar-dark bg-secondary">
         <a class="text-sm-center nav-link active navbar-brand" aria-current="page" href="index.php">Welcome to HTMLhelp</a>
-        <a class="text-sm-center nav-link active navbar-brand" aria-current="page" href="questions.php">Questions</a>
-        <a class="nav-link text-sm-left nav-link active navbar-brand" href="logout.php" role="button" aria-expanded="page">Logout</a>
-        <a class="nav-link disabled text-sm-left navbar-brand" href="#" role="button" aria-expanded="false"><?php echo "Welcome back " . $Username; ?></a>
+        <a class="nav-link text-sm-center nav-link active navbar-brand" href="logout.php" role="button" aria-expanded="page">Logout</a>
+        <a class="nav-link disabled text-sm-center navbar-brand" href="#" role="button" aria-expanded="false"><?php echo "Welcome back " . $Username; ?></a>
     </nav><br>
     <center>
         <span class="border border-dark" style="display: inline-block;">
@@ -38,8 +37,16 @@ $Zip_Code = $_POST['exampleInputZipCode1'];
         </span>
     </center>
     <h1>
-        <center>Thank you for logging in</center>
+        <center>Thank you for logging in <?php echo $Username; ?></center>
     </h1>
+    <h3>
+        <center>Click the questions button below to access the list of questions.</center>
+    </h3>
+    <br>
+    <form action="questions.php">
+        <center><button type="submit" class="btn btn-primary btn-default btn-xl">Questions</button></center>
+    </form>
+
 
 </body>
 
