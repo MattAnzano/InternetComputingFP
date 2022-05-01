@@ -17,27 +17,23 @@ if (empty($user) || empty($pass)) {
     exit();
 }
 
-$query = $db->prepare('SELECT Password FROM users WHERE Username = :user');
+$query = $db->prepare('SELECT Password FROM Users WHERE Username = :user');
 $query->bindParam(':user', $user);
 
 $query->execute();
 $result = $query->fetch();
 
-if(!$result){
+if (!$result) {
     $_SESSION['no_user'] = true;
     header('Location: ../signin.php');
-    $db=null;
+    $db = null;
     exit();
-}
-
-else if(password_verify($pass, $result['Password'])){
+} else if (password_verify($pass, $result['Password'])) {
     $_SESSION['logged_in'] = true;
     $_SESSION['user'] = $user;
     $_SESSION['new_log'] = true;
     header('Location: ../loginhomepage.php');
-}
-
-else{
+} else {
     $_SESSION['wrong_pass'] = true;
     header('Location: ../signin.php');
 }
