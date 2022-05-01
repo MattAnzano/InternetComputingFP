@@ -39,67 +39,67 @@
         <center>Please enter your information to register an account</center>
     </h1>
 
-    <form action="registerhomepage.php" method="post">
+    <form action="./backend/registration_verification.php" method="post">
         <div class="form-group row" style="padding-top: 1em">
-            <label class="col-sm-2 col-form-label" style="padding-left: 5em" for="exampleInputUserName1">Username:</label>
+            <label class="col-sm-2 col-form-label" style="padding-left: 5em" for="Username">Username:</label>
             <div class="col-sm-10">
-                <input type="text" name="exampleInputUserName1" class="form-control" id="exampleInputUserName1" placeholder="Username" required>
+                <input type="text" name="Username" class="form-control" id="Username" placeholder="Username" required>
             </div>
         </div>
 
         <div class="form-group row" style="padding-top: 1em">
-            <label class="col-sm-2 col-form-label" style="padding-left: 5em" for="exampleInputPassword1">Password:</label>
+            <label class="col-sm-2 col-form-label" style="padding-left: 5em" for="Password">Password:</label>
             <div class="col-sm-10">
-                <input type="password" name="exampleInputPassword1" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+                <input type="password" name="Password" class="form-control" id="Password" placeholder="Password" required>
             </div>
         </div>
 
         <div class="form-group row" style="padding-top: 1em">
-            <label class="col-sm-2 col-form-label" style="padding-left: 5em" for="exampleInputFirstName1">First Name:</label>
+            <label class="col-sm-2 col-form-label" style="padding-left: 5em" for="FirstName">First Name:</label>
             <div class="col-sm-10">
-                <input type="text" name="exampleInputFirstName1" class="form-control" id="exampleInputFirstName1" placeholder="First Name" required>
+                <input type="text" name="FirstName" class="form-control" id="FirstName" placeholder="First Name" required>
             </div>
         </div>
 
         <div class="form-group row" style="padding-top: 1em">
-            <label class="col-sm-2 col-form-label" style="padding-left: 5em" for="exampleInputLastName1">Last Name:</label>
+            <label class="col-sm-2 col-form-label" style="padding-left: 5em" for="LastName">Last Name:</label>
             <div class="col-sm-10">
-                <input type="text" name="exampleInputLastName1" class="form-control" id="exampleInputLastName1" placeholder="Last Name" required>
+                <input type="text" name="LastName" class="form-control" id="LastName" placeholder="Last Name" required>
             </div>
         </div>
 
         <div class="form-group row" style="padding-top: 1em">
-            <label class="col-sm-2 col-form-label" style="padding-left: 5em" for="exampleInputEmail1">Email:</label>
+            <label class="col-sm-2 col-form-label" style="padding-left: 5em" for="Email">Email:</label>
             <div class="col-sm-10">
-                <input type="email" name="exampleInputEmail1" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                <input type="email" name="Email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Enter email" required>
             </div>
         </div>
 
         <div class="form-group row" style="padding-top: 1em">
-            <label class="col-sm-2 col-form-label" style="padding-left: 5em" for="exampleInputAddress1">Address:</label>
+            <label class="col-sm-2 col-form-label" style="padding-left: 5em" for="Address">Address:</label>
             <div class="col-sm-10">
-                <input type="text" name="exampleInputAddress1" class="form-control" id="exampleInputAddress1" placeholder="Address" required>
+                <input type="text" name="Address" class="form-control" id="Address" placeholder="Address" required>
             </div>
         </div>
 
         <div class="form-group row" style="padding-top: 1em">
-            <label class="col-sm-2 col-form-label" style="padding-left: 5em" for="exampleInputCity1">City:</label>
+            <label class="col-sm-2 col-form-label" style="padding-left: 5em" for="City">City:</label>
             <div class="col-sm-10">
-                <input type="text" name="exampleInputCity1" class="form-control" id="exampleInputCity1" placeholder="City" required>
+                <input type="text" name="City" class="form-control" id="City" placeholder="City" required>
             </div>
         </div>
 
         <div class="form-group row" style="padding-top: 1em">
-            <label class="col-sm-2 col-form-label" style="padding-left: 5em" for="exampleInputState1">State:</label>
+            <label class="col-sm-2 col-form-label" style="padding-left: 5em" for="State">State:</label>
             <div class="col-sm-10">
-                <input type="text" name="exampleInputState1" class="form-control" id="exampleInputState1" placeholder="State" required>
+                <input type="text" name="State" class="form-control" id="State" placeholder="State" required>
             </div>
         </div>
 
         <div class="form-group row" style="padding-top: 1em">
-            <label class="col-sm-2 col-form-label" style="padding-left: 5em" for="exampleInputZipCode1">Zip Code:</label>
+            <label class="col-sm-2 col-form-label" style="padding-left: 5em" for="ZipCode">Zip Code:</label>
             <div class="col-sm-10">
-                <input type="text" name="exampleInputZipCode1" class="form-control" id="exampleInputZipCode1" placeholder="Zip Code" required>
+                <input type="num" name="ZipCode" class="form-control" id="ZipCode" placeholder="Zip Code" required>
             </div>
         </div>
 

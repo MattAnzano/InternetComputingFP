@@ -39,7 +39,7 @@
         <center>Please enter your information to login into your account</center>
     </h1>
 
-    <form action="loginhomepage.php" method="post">
+    <form action="./backend/login_verification.php" method="post">
         <div class="form-group row" style="padding-top: 1em">
             <label class="col-sm-2 col-form-label" style="padding-left: 5em" for="exampleInputUserName1">Username:</label>
             <div class="col-sm-10">
