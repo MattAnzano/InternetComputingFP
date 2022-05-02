@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 02, 2022 at 05:08 PM
+-- Generation Time: May 02, 2022 at 06:30 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.2
 
@@ -92,6 +92,14 @@ CREATE TABLE `users` (
   `Email` varchar(50) DEFAULT NULL,
   `Address` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`Username`, `Password`, `FirstName`, `LastName`, `Email`, `Address`) VALUES
+('mike', '$2y$10$P6FWsWYPUKLy4K53GH5UKeozl49JmJh2bPr2PqivGh/dhUnKfpez6', 'mike', 'mike', 'mike@gmail', 'mike, mike, mike 08558'),
+('test', '$2y$10$DDQUJlxtcNPbvPKLSe0CFejka7ijteuWZrwNrRl1Nq0FMsFma7xW6', 'test', 'test', 'test@gmail.com', 'test, test, test 12345');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
