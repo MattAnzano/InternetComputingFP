@@ -19,7 +19,7 @@ if (empty($user) || empty($pass) || empty($firstname) || empty($lastname) || emp
     exit();
 }
 
-$query = $db->prepare("SLECT * FROM Users WHERE Username = :user");
+$query = $db->prepare("SELECT * FROM users WHERE Username = :user");
 $query->bindParam(':user', $user);
 
 $query->execute();
@@ -32,7 +32,7 @@ if ($result) {
     exit();
 }
 
-$query = $db->prepare("SLECT * FROM Users WHERE Email = :email");
+$query = $db->prepare("SELECT * FROM users WHERE Email = :email");
 $query->bindParam(':email', $email);
 
 $query->execute();
@@ -49,7 +49,7 @@ $pass = password_hash($pass, PASSWORD_DEFAULT);
 
 $address = $address . ", " . $city . ", " . $state . " " . $zipcode;
 
-$query = $db->prepare("INSERT INTO Users VALUES (:user, :pass, :firstname, :lastname, :email, :address)");
+$query = $db->prepare("INSERT INTO users VALUES (:user, :pass, :firstname, :lastname, :email, :address)");
 $query->bindParam(':user', $user);
 $query->bindParam(':pass', $pass);
 $query->bindParam(':firstname', $firstname);

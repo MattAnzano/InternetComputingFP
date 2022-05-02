@@ -18,7 +18,7 @@ if (empty($Question)) {
     exit();
 }
 
-$query = $db->prepare('SELECT Question FROM Questions WHERE question = :question');
+$query = $db->prepare('SELECT Question FROM questions WHERE Question = :question');
 $query->bindParam(':question', $Question);
 
 $query->execute();

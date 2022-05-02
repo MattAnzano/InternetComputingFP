@@ -1,6 +1,5 @@
 <?php
-$Username = $_POST['exampleInputUserName1'];
-$Password = $_POST['exampleInputPassword1'];
+$user = $_POST['Username'];
 ?>
 
 <!doctype html>
@@ -36,7 +35,7 @@ $Password = $_POST['exampleInputPassword1'];
         </span>
     </center>
     <h1>
-        <center>Thank you for registering <?php echo $Username; ?></center>
+        <center>Thank you for registering <?php echo $user; ?></center>
     </h1>
     <h3>
         <center>Click the questions button below to access the list of questions.</center>

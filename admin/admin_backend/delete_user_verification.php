@@ -4,7 +4,7 @@ session_start();
 
 $user = $_POST['Username'];
 
-$query = $db->prepare('DELETE FROM Users WHERE Username = :user');
+$query = $db->prepare('DELETE FROM users WHERE Username = :user');
 $query->bindParam(':user', $user);
 
 if ($query->execute()) {

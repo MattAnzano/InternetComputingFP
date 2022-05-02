@@ -41,16 +41,16 @@
 
     <form action="./backend/login_verification.php" method="post">
         <div class="form-group row" style="padding-top: 1em">
-            <label class="col-sm-2 col-form-label" style="padding-left: 5em" for="exampleInputUserName1">Username:</label>
+            <label class="col-sm-2 col-form-label" style="padding-left: 5em" for="Username">Username:</label>
             <div class="col-sm-10">
-                <input type="text" name="exampleInputUserName1" class="form-control" id="exampleInputUserName1" placeholder="Username" required>
+                <input type="text" name="Username" class="form-control" id="Username" placeholder="Username" required>
             </div>
         </div>
 
         <div class="form-group row" style="padding-top: 1em">
-            <label class="col-sm-2 col-form-label" style="padding-left: 5em" for="exampleInputPassword1">Password:</label>
+            <label class="col-sm-2 col-form-label" style="padding-left: 5em" for="Password">Password:</label>
             <div class="col-sm-10">
-                <input type="password" name="exampleInputPassword1" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+                <input type="password" name="Password" class="form-control" id="Password" placeholder="Password" required>
             </div>
         </div>
         <br>

@@ -2,9 +2,9 @@
 require_once '../../db_connection.php';
 session_start();
 
-$user = $_POST['username'];
+$user = $_POST['Username'];
 
-$query = $db->prepare('DELETE FROM Admin WHERE Username = :user');
+$query = $db->prepare('DELETE FROM admin WHERE Username = :user');
 $query->bindParam(':user', $user);
 
 if ($query->execute()) {

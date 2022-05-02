@@ -16,7 +16,7 @@ if (empty($user) || empty($pass)) {
     $db = null;
     exit();
 }
-$query = $db->prepare('SELECT Password FROM Admin WHERE Users = :user');
+$query = $db->prepare('SELECT Password FROM admin WHERE Username = :user');
 $query->bindParam(':user', $user);
 
 $query->execute();
