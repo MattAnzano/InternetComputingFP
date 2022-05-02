@@ -1,7 +1,3 @@
-<?php
-$user = $_POST['Username'];
-?>
-
 <!doctype html>
 <html lang="en">
 
@@ -35,7 +31,7 @@ $user = $_POST['Username'];
         </span>
     </center>
     <h1>
-        <center>Thank you for logging in <?php echo $user; ?></center>
+        <center>Thank you for logging in</center>
     </h1>
     <h3>
         <center>Click the questions button below to access the list of questions.</center>
@@ -44,6 +40,8 @@ $user = $_POST['Username'];
     <form action="questions.php">
         <center><button type="submit" class="btn btn-primary btn-default btn-xl">Questions</button></center>
     </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 
 
 </body>

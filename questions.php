@@ -2,31 +2,16 @@
 require_once 'db_connection.php';
 session_start();
 
-if (!isset($_SESSION['logged_in'])) {
-    $_SESSION['need_log'] = true;
-    header('Location: signin.php');
-    $db = null;
-    exit();
-}
-
-$Question = $_POST['Question'];
-
-if (empty($Question)) {
-    $_SESSION['mi_err'] = true;
-    header('Location: loginhomepage.php');
-    $db = null;
-    exit();
-}
-
-$query = $db->prepare('SELECT Question FROM questions WHERE Question = :question');
-$query->bindParam(':question', $Question);
+$query = $db->prepare('SELECT * FROM questions');
 
 $query->execute();
-$result = $query->fetch();
+$result = $query->fetchAll();
+
+// print_r($result);
 
 if (!$result) {
     $_SESSION['mi_err'] = true;
-    header('Location: loginhomepage.php');
+    header('Location: questions.php');
 } else {
     $Question = $result['Question'];
     $Choice1 = $result['Choice1'];
@@ -71,13 +56,20 @@ if (!$result) {
     </h4>
 
     <?php
-    $array_choices = array([$Choice1, $Choice2, $Choice3, $Choice4]);
-    for ($i = 0; $i < 15; $i++) {
-        echo "<ol>" . $Question . "</ol>";
-        for ($j = 0; $j < count($array_choices); $j++) {
-            echo "<ol style=list-style-type: lower-alpha>" . "<li>" . $j . "</li>";
+    $array_choices = array($Choice1, $Choice2, $Choice3, $Choice4);
+    if ($result) {
+        $i = 0;
+        foreach ($result as $row) {
+            echo $i + 1 . ". " . $row['Question'];
+            for ($j = 0; $j < count($array_choices); $j++) {
+                echo '<ol style="list-style-type: lower-alpha;">';
+                echo $row[$j + 1];
+                echo '</ol>';
+            }
+            $i = $i + 1;
         }
-    } ?>
+    }
+    ?>
 
 
 
