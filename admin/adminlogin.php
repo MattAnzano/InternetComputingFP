@@ -39,7 +39,7 @@
         <center>Please enter admin information to login into the admin account</center>
     </h1>
 
-    <form action="adminhomepage.php" method="post">
+    <form action="./admin_backend/admin_login_verification.php" method="post">
         <div class="form-group row" style="padding-top: 1em">
             <label class="col-sm-2 col-form-label" style="padding-left: 5em" for="exampleInputUserName1">Username:</label>
             <div class="col-sm-10">

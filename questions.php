@@ -1,3 +1,42 @@
+<?php
+require_once 'db_connection.php';
+session_start();
+
+if (!isset($_SESSION['logged_in'])) {
+    $_SESSION['need_log'] = true;
+    header('Location: signin.php');
+    $db = null;
+    exit();
+}
+
+$Question = $_POST['Question'];
+
+if (empty($Question)) {
+    $_SESSION['mi_err'] = true;
+    header('Location: loginhomepage.php');
+    $db = null;
+    exit();
+}
+
+$query = $db->prepare('SELECT Question FROM Questions WHERE question = :question');
+$query->bindParam(':question', $Question);
+
+$query->execute();
+$result = $query->fetch();
+
+if (!$result) {
+    $_SESSION['mi_err'] = true;
+    header('Location: loginhomepage.php');
+} else {
+    $Question = $result['Question'];
+    $Choice1 = $result['Choice1'];
+    $Choice2 = $result['Choice2'];
+    $Choice3 = $result['Choice3'];
+    $Choice4 = $result['Choice4'];
+    $Answer = $result['Answer'];
+}
+
+?>
 <!doctype html>
 <html lang="en">
 
@@ -30,6 +69,16 @@
     <h4>
         <center>Don't worry, we will give you an option to see the answer and explain why that is the correct answer</center>
     </h4>
+
+    <?php
+    $array_choices = array([$Choice1, $Choice2, $Choice3, $Choice4]);
+    for ($i = 0; $i < 15; $i++) {
+        echo "<ol>" . $Question . "</ol>";
+        for ($j = 0; $j < count($array_choices); $j++) {
+            echo "<ol style=list-style-type: lower-alpha>" . "<li>" . $j . "</li>";
+        }
+    } ?>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
