@@ -1,11 +1,6 @@
-<?php
-require_once '../logout.php';
-
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,13 +10,17 @@ require_once '../logout.php';
 
     <title>Admin Home page</title>
 </head>
+
 <body>
-    <center><h2><b>Administrator Home Page</b></h2>
-    <p>Click the button below to add a question</p><br>
-    <a href="insert_question.php" class="btn btn-primary">Insert Class</a></center>
+    <center>
+        <h2><b>Administrator Home Page</b></h2>
+        <p>Click the button below to add a question</p><br>
+        <a href="insert_question.php" class="btn btn-primary">Insert Class</a>
+    </center>
 
     <form action="../logout.php" method="POST">
         <input type="submit" name="logout" class="btn btn-danger">logout</input>
     </form>
 </body>
+
 </html>
