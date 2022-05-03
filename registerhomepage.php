@@ -1,7 +1,3 @@
-<?php
-$user = $_POST['Username'];
-?>
-
 <!doctype html>
 <html lang="en">
 
@@ -35,7 +31,7 @@ $user = $_POST['Username'];
         </span>
     </center>
     <h1>
-        <center>Thank you for registering <?php echo $user; ?></center>
+        <center>Thank you for registering</center>
     </h1>
     <h3>
         <center>Click the questions button below to access the list of questions.</center>
