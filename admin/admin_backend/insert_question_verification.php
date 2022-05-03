@@ -16,7 +16,7 @@ if (empty($Question) || empty($Choice1) || empty($Choice2) || empty($Choice3) ||
     exit();
 }
 
-$query = $db->prepare("INSERT INTO questions VALUES (:Question, :Choice1, :Choice2, :Choice3, :Choice4)");
+$query = $db->prepare("INSERT INTO questions VALUES (:Question, :Choice1, :Choice2, :Choice3, :Choice4, :Answer)");
 $query->bindParam(':Question', $Question);
 $query->bindParam(':Choice1', $Choice1);
 $query->bindParam(':Choice2', $Choice2);
@@ -26,7 +26,7 @@ $query->bindParam(':Answer', $Answer);
 
 if ($query->execute()) {
     $_SESSION['insert_success'] = true;
-    header('Location: ../manage_questions.php');
+    header('Location: ../adminhomepage.php');
 } else {
     $_SESSION['insert_error'] = true;
     header("Location: ../insert_question.php");

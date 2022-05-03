@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <form action="insert_question_verification.php" method="POST" id="addQ">
+    <form action="./admin_backend/insert_question_verification.php" method="POST" id="addQ">
         <center><label class="questions" name="Question">Question</label>
             <input type="text" id="Question" name="Question">
         </center>
