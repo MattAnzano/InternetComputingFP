@@ -49,7 +49,7 @@ INSERT INTO `admin` (`Username`, `Password`, `FirstName`, `LastName`, `Email`) V
 --
 
 CREATE TABLE `questions` (
-  `Question` varchar(2000) DEFAULT NULL,
+  `Question` varchar(5000) DEFAULT NULL,
   `Choice1` varchar(255) DEFAULT NULL,
   `Choice2` varchar(255) DEFAULT NULL,
   `Choice3` varchar(255) DEFAULT NULL,

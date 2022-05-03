@@ -61,11 +61,12 @@ if (!$result) {
         $i = 0;
         foreach ($result as $row) {
             echo $i + 1 . ". " . $row['Question'];
-            for ($j = 0; $j < count($array_choices); $j++) {
-                echo '<ol style="list-style-type: lower-alpha;">';
-                echo $row[$j + 1];
-                echo '</ol>';
-            }
+            echo "<br>";
+            //for ($j = 0; $j < count($array_choices); $j++) {
+            //    echo '<ol style="list-style-type: lower-alpha;">';
+            //    echo $row[$j + 1];
+            //    echo '</ol>';
+            //}
             $i = $i + 1;
         }
     }
