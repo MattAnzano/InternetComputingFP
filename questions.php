@@ -12,14 +12,15 @@ $result = $query->fetchAll();
 if (!$result) {
     $_SESSION['mi_err'] = true;
     header('Location: questions.php');
-} else {
-    $Question = $result['Question'];
-    $Choice1 = $result['Choice1'];
-    $Choice2 = $result['Choice2'];
-    $Choice3 = $result['Choice3'];
-    $Choice4 = $result['Choice4'];
-    $Answer = $result['Answer'];
 }
+
+// $Question = $result['Question'];
+// $Choice1 = $result['Choice1'];
+// $Choice2 = $result['Choice2'];
+// $Choice3 = $result['Choice3'];
+// $Choice4 = $result['Choice4'];
+// $Answer = $result['Answer'];
+
 
 ?>
 <!doctype html>
@@ -56,14 +57,14 @@ if (!$result) {
     </h4>
 
     <?php
-    $array_choices = array($Choice1, $Choice2, $Choice3, $Choice4);
+    // $array_choices = array($Choice1, $Choice2, $Choice3, $Choice4);
     if ($result) {
         $i = 0;
         foreach ($result as $row) {
             echo $i + 1 . ". " . $row['Question'];
             echo "<br>";
-            for ($j = 0; $j < count($array_choices); $j++) {
-                echo '<ol style="list-style-type: lower-alpha;">';
+            for ($j = 0; $j < 4; $j++) {
+                echo '<ol>';
                 echo $row[$j + 1];
                 echo '</ol>';
             }
