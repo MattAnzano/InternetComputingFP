@@ -10,6 +10,10 @@
 </head>
 
 <body>
+    <nav class="nav nav-pills justify-content navbar navbar-dark bg-secondary">
+        <a class="text-sm-center nav-link active navbar-brand" aria-current="page" href="../index.php">Welcome to HTMLhelp</a>
+        <a class="nav-link text-sm-center nav-link active navbar-brand" href="../logout.php" role="button" aria-expanded="page">Logout</a>
+    </nav><br>
     <br>
     <center>
         <span class="border border-dark" style="display: inline-block;">
