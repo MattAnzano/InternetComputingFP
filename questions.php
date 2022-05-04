@@ -50,7 +50,7 @@ if (!$result) {
         </span>
     </center>
     <h1>
-        <center>Welcome to our questions page, here you will be able to chose the questions you would like to try from the list below!</center>
+        <center>Welcome to our questions page, here you will be able to choose the questions you would like to try from the list below!</center>
     </h1>
     <h4>
         <center>Don't worry, we will give you an option to see the answer and explain why that is the correct answer</center>
