@@ -10,7 +10,16 @@
 </head>
 
 <body>
-    <center><h2>Enter a multiple choice question below with 4 potential answers and the correct one.</h2></center>
+    <br>
+    <center>
+        <span class="border border-dark" style="display: inline-block;">
+            <img src="../learn-html-and-css-copy.png" width="360" height="150" alt="Learn HTML and CSS Picture">
+        </span>
+    </center>
+    <br>
+    <center>
+        <h2>Enter a multiple choice question below with 4 potential answers and the correct one.</h2>
+    </center>
     <br>
     <br>
     <form action="./admin_backend/insert_question_verification.php" method="POST" id="addQ">
@@ -23,15 +32,15 @@
             <input type="text" id="Choice1" name="Choice1">
         </center>
 
-        <center><label class="Choice" name="Choice">Choice 2: </label>
+        <center><label style="margin-top: 10px;" class="Choice" name="Choice">Choice 2: </label>
             <input type="text" id="Choice2" name="Choice2">
         </center>
 
-        <center><label class="Choice" name="Choice">Choice 3: </label>
+        <center><label style="margin-top: 10px;" class="Choice" name="Choice">Choice 3: </label>
             <input type="text" id="Choice3" name="Choice3">
         </center>
 
-        <center><label class="Choice" name="Choice">Choice 4: </label>
+        <center><label style="margin-top: 10px;" class="Choice" name="Choice">Choice 4: </label>
             <input type="text" id="Choice4" name="Choice4">
         </center>
         <br>
@@ -40,7 +49,7 @@
             <input type="text" id="Answer" name="Answer">
         </center>
         <br>
-        <center><input type = "reset" value = "Reset" class="btn btn-warning"></center>
+        <center><input type="reset" value="Reset" class="btn btn-warning"></center>
         <br>
 
         <center><button type="submit" form="addQ" value="Submit" class="btn btn-primary">Submit</center>
@@ -50,9 +59,16 @@
     <br>
     <br>
     <br>
-    <center>Changed your mind?</center>
-    <center><form action="../logout.php" method="POST">
-        <input type="submit" name="logout" class="btn btn-danger" value = "logout"></input></center>
+    <center>
+        <h4>Changed your mind?</h4>
+    </center>
+    <center>
+        <nav>
+            <a href="../logout.php" style="margin-right: 25px;" class="btn btn-danger">Logout</a>
+            <a href="adminhomepage.php" class="btn btn-danger">Go back</a>
+        </nav>
+    </center>
+    <br>
 </body>
 
 </html>
