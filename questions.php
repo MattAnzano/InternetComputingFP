@@ -65,8 +65,8 @@ if (!$result) {
             echo $i + 1 . ". " . $row['Question'];
             echo "<br>";
             // for ($j = 0; $j < 4; $j++) {
-            //     echo '<ol>';
-            //     echo $row[$j + 1];
+             //   echo '<ol>';
+             //   echo $row[$j + 1];
             //     echo '</ol>';
             // }
             $i = $i + 1;
