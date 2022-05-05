@@ -55,6 +55,8 @@ if (!$result) {
     <h4>
         <center>Don't worry, we will give you an option to see the answer and explain why that is the correct answer</center>
     </h4>
+    <br>
+
 
     <?php
     // $array_choices = array($Choice1, $Choice2, $Choice3, $Choice4);
@@ -64,15 +66,16 @@ if (!$result) {
         foreach ($result as $row) {
             echo $i + 1 . ". " . $row['Question'];
             echo "<br>";
-            // for ($j = 0; $j < 4; $j++) {
-             //   echo '<ol>';
-             //   echo $row[$j + 1];
-            //     echo '</ol>';
-            // }
+            for ($j = 0; $j < 4; $j++) {
+                echo '<ol><input type="radio" name="Choice"';
+                echo '<label>' . "\t" . $row[$j + 1];
+                echo '</ol>';
+            }
             $i = $i + 1;
         }
     }
     ?>
+
 
 
 
