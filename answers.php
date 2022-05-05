@@ -2,6 +2,8 @@
 require_once 'db_connection.php';
 session_start();
 
+$Choice = $_POST['$row[$j+1]'];
+
 $query = $db->prepare('SELECT * FROM questions');
 
 $query->execute();
@@ -13,6 +15,7 @@ if (!$result) {
 }
 
 ?>
+
 <!doctype html>
 <html lang="en">
 
@@ -40,42 +43,24 @@ if (!$result) {
         </span>
     </center>
     <h1>
-        <center>Welcome to our questions page, here you will be able to choose the questions you would like to try from the list below!</center>
+        <center>Welcome to our answers page, here you will be able to see the correct answer and why along with the choices you chose!</center>
     </h1>
-    <h4>
-        <center>Don't worry, we will give you an option to see the answer and explain why that is the correct answer</center>
-    </h4>
-    <br>
-    <form action="answers.php" method="post">
-        <?php
-        if ($result) {
-            $i = 0;
-            $count = 0;
-            foreach ($result as $row) {
-                echo $i + 1 . ". " . '<label for="question">' . $row['Question'] . '</label>';
-                echo "<br>";
-                echo '<select id="question" name="question">';
-                echo '<option value="blank">Select an option</option>';
-                for ($j = 0; $j < 4; $j++) {
-                    echo '<option value="$row[$j + 1]" name="$row[$j+1]">' . $row[$j + 1] . '</option>';
-                    if ($row['Answer']) {
-                        $count++;
-                    }
-                }
-                $i = $i + 1;
-                echo '</select>';
-                echo '<br>';
-                echo '<br>';
-            }
+    <?php
+    if ($result) {
+        $i = 0;
+        foreach ($result as $row) {
+            echo 'Answer for Question ' . $i + 1 . ' is: ' . $row['Answer'];
+            echo "<br>";
+            echo 'Your choice was: ' . $Choice;
+            echo '<br>';
+            $i = $i + 1;
+            echo '<br>';
         }
-        ?>
-        <br>
-        <div style="padding-left: 1em;">
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </div>
-        <br>
-        <br>
-    </form>
+    }
+    ?>
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
