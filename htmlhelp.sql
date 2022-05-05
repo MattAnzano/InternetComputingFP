@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 02, 2022 at 06:30 PM
+-- Generation Time: May 05, 2022 at 04:10 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.2
 
@@ -63,16 +63,16 @@ CREATE TABLE `questions` (
 
 INSERT INTO `questions` (`Question`, `Choice1`, `Choice2`, `Choice3`, `Choice4`, `Answer`) VALUES
 ('What does HTML5 stand for?', 'HyperText Markup Language 5', 'HighTechnical Markup Language 5', 'HyperText Making Language 5', 'HighText Makeup Language 5', 'HyperText Markup Language 5'),
-('What is the first element in an HTML5 document?', '<head>', '<title>', '<!DOCTYPE html>', '<body>', '<!DOCTYPE html>'),
-('Which of the following is an example of a start and end tag?', '<html><html>', '<html><html>', '</html></html>', '<html></html>', '<html></html>'),
-('What element is used to create links in an html file?', '<a>', '<link>', '<website>', '<URL>', '<a>'),
+('What is the first element in an HTML5 document?', 'head', 'title', '!DOCTYPE html', 'body', '!DOCTYPE html'),
+('Which of the following is an example of a start and end tag?', 'htmlhtml', '/html html', '/html /html', 'html /html', 'html /html'),
+('What element is used to create links in an html file?', 'a', 'link', 'website', 'URL', 'a'),
 ('What element can be used if a browser is not able to render an image within the image tag?', 'text', 'alt', 'p', 'img', 'alt'),
 ('How do you use an ampersand in a paragraph tag?', '&', 'amp', '&amp', 'There is no way', '&amp'),
 ('What does the action element assuming it is a URL link do in a form tag?', 'Does nothing', 'Copy the link in your browser', 'Deletes the link from your browser', 'Takes you to the link', 'Takes you to the link'),
 ('What attribute forces the user to enter a value before submitting the form?', 'required', 'forced', 'needed', 'essential', 'required'),
 ('The inline style of CSS declares an individual element’s format using what HTML5 attribute?', 'CSS', 'style', 'class', 'id', 'style'),
 ('How do you embed styling to a tag with an id attribute of “test”?', '.test{...}', 'test{...}', '#test{...}', '&test{...}', '#test{...}'),
-('Where do you place the <style> tag in an HTML file to embed CSS in your document?', '<body>', '<title>', '<p>', '<head>', '<head>'),
+('Where do you place the style tag in an HTML file to embed CSS in your document?', 'body', 'title', 'p', 'head', 'head'),
 ('Which of the following styling attributes is for relative length measurements?', 'in (inches)', 'px (pixels)', 'cm (centimeters)', 'pt (points)', 'px (pixels)'),
 ('Can you link an external style sheet?', 'Yes', 'No', 'Maybe', 'Never', 'Yes'),
 ('What type of text can you apply the text shadow effect to?', 'paragraphs', 'any', 'headings', 'forms', 'any'),
@@ -98,7 +98,6 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`Username`, `Password`, `FirstName`, `LastName`, `Email`, `Address`) VALUES
-('mike', '$2y$10$P6FWsWYPUKLy4K53GH5UKeozl49JmJh2bPr2PqivGh/dhUnKfpez6', 'mike', 'mike', 'mike@gmail', 'mike, mike, mike 08558'),
 ('test', '$2y$10$DDQUJlxtcNPbvPKLSe0CFejka7ijteuWZrwNrRl1Nq0FMsFma7xW6', 'test', 'test', 'test@gmail.com', 'test, test, test 12345');
 COMMIT;
 
