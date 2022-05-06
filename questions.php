@@ -46,41 +46,30 @@ if (!$result) {
         <center>Don't worry, we will give you an option to see the answer and explain why that is the correct answer</center>
     </h4>
     <br>
-    <p>
+    <form action="answers.php" method="post">
         <?php
         if ($result) {
             $i = 0;
             $count = 0;
             foreach ($result as $row) {
-                $Answer = $row['Answer'];
                 echo $i + 1 . ". " . '<label for="question">' . $row['Question'] . '</label>';
                 echo "<br>";
                 echo '<select id="question" name="question">';
                 for ($j = 0; $j < 4; $j++) {
-                    echo '<option value="$row[$j + 1]" name="$row[$j+1]">' . $row[$j + 1] . '</option>';
-                    // if ($row['Answer']) {
-                    //     $count++;
-                    // }
+                    echo '<option value="$row[$j + 1]" name="Choice">' . $row[$j + 1] . '</option>';
                 }
                 $i = $i + 1;
                 echo '</select>';
                 echo '<br><br>';
-                echo '<button onclick="myFunction()">Answer</button>';
-                echo '<p id="demo"></p>';
-                echo '<br><br><br>';
             }
         }
         ?>
-        <script>
-            function myFunction() {
-                document.getElementById("demo").innerHTML = '<?= $row[5] ?>';
-            }
-        </script>
         <br>
-
+        <div style="padding-left: 1em;">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
         <br>
-        <br>
-    </p>
+    </form>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

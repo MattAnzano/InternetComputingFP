@@ -44,14 +44,13 @@ if (!$result) {
     <h1>
         <center>Welcome to our answers page, here you will be able to see the correct answer and why along with the choices you chose!</center>
     </h1>
+    <br>
     <?php
     if ($result) {
         $i = 0;
         foreach ($result as $row) {
             echo 'Answer for Question ' . $i + 1 . ' is: ' . $row['Answer'];
-            echo "<br>";
-            echo 'Your choice was: ';
-            echo '<br>';
+            echo '<br><br>';
             $i = $i + 1;
             echo '<br>';
         }
