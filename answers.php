@@ -2,12 +2,11 @@
 require_once 'db_connection.php';
 session_start();
 
-$Choice = $_POST['$row[$j+1]'];
-
 $query = $db->prepare('SELECT * FROM questions');
 
 $query->execute();
 $result = $query->fetchAll();
+
 
 if (!$result) {
     $_SESSION['mi_err'] = true;
@@ -51,7 +50,7 @@ if (!$result) {
         foreach ($result as $row) {
             echo 'Answer for Question ' . $i + 1 . ' is: ' . $row['Answer'];
             echo "<br>";
-            echo 'Your choice was: ' . $Choice;
+            echo 'Your choice was: ';
             echo '<br>';
             $i = $i + 1;
             echo '<br>';
