@@ -44,7 +44,7 @@
     <h4>
         <center class="text-muted">Looking to refresh your knowledge on HTML/CSS? Here you can
             advance through several questions to test your knowledge on
-            the subjects. We'll let you know the correct answers and why!</center>
+            the subjects. We'll let you know the correct answers!</center>
     </h4>
     <h5>
         <center class="text-muted">Sign in or Register in the top right of the page!</center>

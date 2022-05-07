@@ -42,7 +42,7 @@ if (!$result) {
         </span>
     </center>
     <h1>
-        <center>Welcome to our answers page, here you will be able to see the correct answer and why along with the choices you chose!</center>
+        <center>Welcome to our answers page, below are the answers to the previous questions!</center>
     </h1>
     <br>
     <?php
@@ -58,7 +58,9 @@ if (!$result) {
     ?>
 
 
-
+    <center><a href="questions.php" class="btn btn-success">Try again</a></center>
+    <br>
+    <br>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 

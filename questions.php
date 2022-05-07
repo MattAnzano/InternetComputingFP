@@ -40,10 +40,10 @@ if (!$result) {
         </span>
     </center>
     <h1>
-        <center>Welcome to our questions page, here you will be able to choose the questions you would like to try from the list below!</center>
+        <center>Welcome to our questions page, below are HTML/CSS questions that will refresh your memory on the subjects</center>
     </h1>
     <h4>
-        <center>Don't worry, we will give you an option to see the answer and explain why that is the correct answer</center>
+        <center>Don't worry, we will give you the correct answers once you submit your answers!</center>
     </h4>
     <br>
     <form action="answers.php" method="post">
